@@ -79,8 +79,8 @@ semilogy(mean(error_04),'kx-','LineWidth',1.5, 'MarkerIndices', 1:max_iter/10:ma
 semilogy(mean(error_05),'rd-','LineWidth',1.5, 'MarkerIndices', 1:max_iter/10:max_iter); 
 xlabel('Iterations');
 ylabel('Tol');
-xlim([1,300]);
-ylim([1e-4, 1.1e4])
+%xlim([1,300]);
+%ylim([1e-4, 1.1e4])
 legend('ISTA', 'FISTA', 'EFISTA', 'EOPGM' ,'EOptISTA');%, 'NFISTA');
 set(gca,'Fontsize',20)
 
@@ -93,7 +93,7 @@ semilogy(mean(psnr_list_04),'kx-','LineWidth',1.5, 'MarkerIndices', 1:max_iter/1
 semilogy(mean(psnr_list_05),'rd-','LineWidth',1.5, 'MarkerIndices', 1:max_iter/10:max_iter); 
 xlabel('Iterations');
 ylabel('PSNR');
-xlim([1,300]);
-ylim([20, 31])
+%xlim([1,300]);
+%ylim([20, 31])
 legend('ISTA', 'FISTA', 'EFISTA', 'EOPGM' ,'EOptISTA');%, 'NFISTA');
 set(gca,'Fontsize',20)
